@@ -1,0 +1,426 @@
+
+
+/* Global CSS */
+html{scroll-behavior: smooth;}
+@font-face {font-family: "Dancing Script";src: url("assets/DancingScript-VariableFont_wght.ttf") format("truetype");   }
+@font-face {font-family: "AmatiSC-Bold";src: url("assets/AmaticSC-Bold.ttf") format("truetype");   }
+*{margin: 0;padding: 0;box-sizing:border-box;}
+body{
+  background-image: url(/images/bg.jpg);
+  
+}
+select {
+  position: relative;
+  text-align: center;
+  text-align-last: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+  background-color: #282a2c;
+  
+}
+
+/* ####################################                                             NAVBAR                                                               ################################### */
+
+
+#trapezoid {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 80px solid rgba(0,0,0,0);
+  border-top: 0 solid;
+  border-bottom: 100px solid rgba(1, 1, 1, .4);
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  transform: rotateX(180deg);
+  margin-top:-53px;
+  width: 750px;
+  position: relative; 
+  transition: all 0.7s ease;
+  padding-left:4%;
+  scroll-behavior: smooth;
+}
+  
+  #trapezoid a{
+   -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    
+  }
+  
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    display:flex;
+    overflow:hidden;
+    justify-content: center;
+    height: 100px;
+    z-index:1;
+    
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+  
+  
+  .navbar a:hover {
+    background:#8CA6DB;
+    color: black;
+    border-radius:5px;
+  }
+ 
+
+  h1{
+    font-size: 50px;
+    font-family:Audiowide;
+    
+  }
+
+  p{
+    font-size: 30px;
+    line-height: 50px;
+    color:whitesmoke;
+
+  }
+  
+  hr {
+    background-color: #000;
+  }
+
+
+                                                 /* ##################### Effet Typewriting ###############################*/
+  .anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+.anim-typewriter2 {
+  animation: typewriter2 4s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter{0%{width:0ch;}100% {width:14ch;}}
+@keyframes typewriter2{0%{width:0ch;}100% {width:12ch;}}
+@keyframes blinkTextCursor {from {border-right-color: rgba(255, 255, 255, 0.65);}to {border-right-color: transparent;}}
+.line {
+  position: relative;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;transform: translateY(-50%);
+}
+/*#################### Partie banner #########*/
+
+img{
+  width: 30%;
+}
+.banner-area{
+  position: relative;
+  top:-100px;
+  background-image: url(/images/banner.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 10px 5px #191a1b;
+
+}
+
+
+#prenom{
+  text-align:center;
+  font-family: 'AmatiSC-Bold';
+  color:#D4C7C7;
+  font-size:180px;
+ 
+
+}
+
+#devWebLogiciel{
+  text-align:center;
+  font-family: 'Dancing Script';
+  color:#D4C7C7;
+  font-size: 70px;
+}
+ 
+
+
+
+
+@media screen and (max-width:850px){
+  #devWebLogiciel{
+      font-size: 50px;
+  }
+  #prenom{
+    font-size:120px;
+  }
+}
+
+
+.area {
+    padding: 50px 100px 100px 100px;
+    background-color: #202225;
+    margin: 0 30px 50px 30px;
+    box-shadow: 15px 15px 15px #191a1b;
+    flex-direction:column;
+    
+}
+/* #############  Partie compétences ############*/
+.title{
+  text-align:center;
+  padding-bottom: 30px;
+  color:#fefefe;
+  
+}
+
+.skills{
+  display:flex;
+  justify-content: space-around;
+}
+
+#subtitle{
+  font-size: 17px;
+}
+.logo{
+  height:100px;
+  width: auto;
+}
+.skill_card{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top: 20px;
+  }
+.card{
+  width:170px;
+  height:230px;
+  background-color: #282a2c;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  border-radius:10px;
+
+}
+.circle_card img{
+  width:100%;
+  height:100%;
+  display:block;
+
+  
+}
+.circle_card{
+  width:120px;
+  height:120px;
+  border-radius:60px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+  
+}
+.description{
+  width:140px;
+  height:80px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  color: #D4C7C7;
+
+}
+
+/* ##############  Partie projet  ###############*/
+.images{
+  display:flex;
+  justify-content: space-around;
+}
+.image-container {
+  height: 200px;
+  width: 250px;
+  border:10px solid black;
+  position:relative;
+}
+.image-container img{
+  width:100%;
+  height:100%
+}
+.fade::after{
+  content:'Robot Fruit+ (Arduino)';
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 20px;
+  background:#000;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade:hover::after{
+  opacity: 0.5;
+}
+.fade2::after{
+  content:'Site Vitrine';
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 20px;
+  background:#000;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade2:hover::after{
+  opacity: 0.65;
+}
+.fade3::after{
+  content:'MultiGames (Python)';
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 20px;
+  background:#000;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade3:hover::after{
+  opacity: 0.65;
+}
+
+
+/* #################################  Timeline  #############*/
+.box-timeline {
+  width: 100%;
+  height: 1280px;
+  background: #202225;
+  position: relative;
+  padding: 80px 0 50px 0;
+  margin-bottom: 50px;
+}
+
+.ligne {
+  height: 1000px;
+  width: 8px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.rond {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #333;
+  position: absolute;
+  border: 1px solid #000;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 80px;}
+.r2{top: 386px;}
+.r3{top: 692px;}
+.r4{top: 1000px;}
+
+.box {
+  color: #333;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 3px;
+  height: auto;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.b1 {
+  top: 80px;
+  left: calc(50% - 270px);
+}
+.b2 {
+  top: 386px;
+  left: calc(50% + 270px);
+}
+.b3 {
+  top: 692px;
+  left: calc(50% - 270px);
+}
+.b4 {
+  top: 1000px;
+  left: calc(50% + 270px);
+}
+
+.box p {
+  line-height: 20px;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+.btn {
+  display: block;
+  background: midnightblue;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.experience_title{
+  text-align:center;
+  padding-bottom: 0px;
+  color:#fefefe
+}
+.noir{color:black}
+@media screen and (max-width: 1000px) {
+
+  .ligne {
+      position: relative;
+      left: 200px;
+  }
+  .rond {
+      left: calc(50% + 200px);
+  }
+  .box {
+      left: calc(50% - 50px)
+  }
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills{
+    flex-direction: column;
+  }
+}
