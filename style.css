@@ -160,17 +160,6 @@ img{
 
 
 
-
-@media screen and (max-width:850px){
-  #devWebLogiciel{
-      font-size: 50px;
-  }
-  #prenom{
-    font-size:120px;
-  }
-}
-
-
 .area {
     padding: 50px 100px 100px 100px;
     background-color: #202225;
@@ -200,9 +189,11 @@ img{
   width: auto;
 }
 .skill_card{
+  
   display:flex;
   justify-content:space-evenly;
   margin-top: 20px;
+ 
   }
 .card{
   width:170px;
@@ -420,7 +411,50 @@ img{
     flex-direction: column;
     align-items: center;
   }
+  
   .skills{
     flex-direction: column;
   }
+}
+
+
+
+
+@media screen and (max-width:767px){
+  .navbar{
+    display:none;
+  }
+  #devWebLogiciel{
+
+      font-size: 30px;
+  }
+  #prenom{
+    font-size:80px;
+  }
+  .skill_card{
+    flex-direction: column;
+    justify-content:space-between;
+
+  }
+  .skills_title{
+    font-size: 20px;
+  }
+  .r1,.r2,.r3,.r4{
+    display:none;
+  }
+  .experience_title h1{
+    font-size:35px;
+    
+  }
+  .box{
+    width:250px;
+    left:0;
+  }
+  .b1,.b2,.b3,.b4{
+    left:50%;
+  }
+  .ligne{
+    display:none;
+  }
+  
 }
